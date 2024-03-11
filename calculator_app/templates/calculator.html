@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="{{ url_for('static', filename = 'css/calculator.css')}}" rel= "stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "calculator">
+        <input id = "display" readonly>
+        <div class = "keys">
+            <button onclick = "Display('+')" class = "operator">+</button>
+            <button onclick = "Display('7')">7</button>
+            <button onclick = "Display('8')">8</button>
+            <button onclick = "Display('9')">9</button>
+            <button onclick = "Display('-')" class = "operator">-</button>
+            <button onclick = "Display('4')">4</button>
+            <button onclick = "Display('5')">5</button>
+            <button onclick = "Display('6')">6</button>
+            <button onclick = "Display('*')" class = "operator">*</button>
+            <button onclick = "Display('1')">1</button>
+            <button onclick = "Display('2')">2</button>
+            <button onclick = "Display('3')">3</button>
+            <button onclick = "Display('/')" class = "operator">/</button>
+            <button onclick = "Display('0')">0</button>
+            <button onclick = "Display('.')">.</button>
+            <button onclick = "calculate()" class = "equal">=</button>
+            <button onclick = "clearDisplay()" class = "operator">C</button>
+        </div>
+    </div>
+
+    <script src = "static/js/calculator.js"></script>
+</body>
+</html>
